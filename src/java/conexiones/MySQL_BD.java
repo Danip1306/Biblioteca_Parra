@@ -7,51 +7,51 @@ package conexiones;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
- * @author soporte
+ * @author Estudiante
  */
 public class MySQL_BD {
-
+    
     private static MySQL_BD instance;
-    public Connection cnn = null;
-    private String driver = "com.mysql.cj.jdbc.Driver";
-    private String user = "root";
-    private String pss = "";
-    private String nom_bd = "bd_biblioteca";
-    private String url = "jdbc:mysql://localhost:3306/";
+    public Connection cnn;
+    private String driver="com.mysql.cj.jdbc.Driver";
+    private String user="root";
+    private String pss="";
+    private String nom_bd="bd_biblioteca";
+    private String url= "jdbc:mysql://localhost:3306/";
 
-    private MySQL_BD() {
-        System.out.println("creando instacia");
+    private  MySQL_BD() {
+        System.out.println("creando instancia");
         try {
             Class.forName(driver);
-            cnn = DriverManager.getConnection(url + nom_bd, user, pss);
-               System.out.println("Si hay conexion");
-        } catch (ClassNotFoundException | SQLException ex) {
-            System.out.println("error en driver mysql: " + ex.getMessage());
+            cnn=DriverManager.getConnection(url+nom_bd,user,pss);
+            System.out.println("Hay conexion");
+        } catch (ClassNotFoundException | SQLException  ex) {
+            System.out.println("error al cargar drive BD"+ex.getMessage());
         }
+        
     }
 
     public static synchronized MySQL_BD getInstance() {
-        if (instance == null) {
-            instance = new MySQL_BD();
+        if(instance==null){
+            instance =new MySQL_BD();
         }
+           
         return instance;
     }
-    
-  
-    public void cerrarConexion() {
-        if (cnn != null) {
-            try {
+    public void CerrarConexion(){
+        if(cnn !=null){
+            try{
                 cnn.close();
-                System.out.println("Conexion cerrada");
-            } catch (SQLException ex) {
-                System.out.println("error al cerra la conexion: " + ex.getMessage());
+                System.out.println("conexion cerrada");
+            }catch(SQLException ex){
+                System.out.println("error al cerrar la base de datos"+ex.getMessage());
             }
         }
-        instance = null;
+        instance=null;
     }
 }
 

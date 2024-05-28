@@ -26,7 +26,7 @@ public class NewMain {
         for(LibroDTO lb : lista){
             System.out.println(lb.toString());
         }
-        MySQL_BD.getInstance().cerrarConexion();
+        MySQL_BD.getInstance().CerrarConexion();
     }
 
 }

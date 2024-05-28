@@ -1,14 +1,14 @@
 <%-- 
-    Document   : principal
-    Created on : 6/05/2024, 7:12:46 p. m.
-    Author     : soporte
+    Document   : index
+    Created on : 7/05/2024, 11:37:00 a. m.
+    Author     : Estudiante
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<% HttpSession obj = request.getSession();
-if(obj != null && obj.getAttribute("usuario")!=null){
-
-    %>
+<%HttpSession obj=request.getSession();
+if(obj !=null && obj.getAttribute("usuario")!=null){
+    
+%>    
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,7 +28,7 @@ if(obj != null && obj.getAttribute("usuario")!=null){
 
     </body>
 </html>
-<% }else{
-                request.getRequestDispatcher("error.html").forward(request, response);
-
-} %>
+<%}else{
+         request.getRequestDispatcher("error.html").forward(request, response);
+        }
+%>

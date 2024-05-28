@@ -31,27 +31,25 @@ public class ValidaCTO extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String accion = request.getParameter("accion");
-
-        String correo = request.getParameter("email");
-        String clave = request.getParameter("clave");
-
-        if (accion.equalsIgnoreCase("Ingresar")) {
-            EmpleadoDTO p = new EmpleadoDTO();
+        String accion= request.getParameter("accion");
+        String correo=request.getParameter("email");
+        String clave=request.getParameter("clave");
+        
+        if(accion.equalsIgnoreCase("Ingresar")){
+            EmpleadoDTO p=new EmpleadoDTO();
             p.setCorreo(correo);
             p.setClave(clave);
-            EmpleadoDAO dao = new EmpleadoDAO();
-            p = dao.validaSesion(p);
-
-            if (p != null) {
-                HttpSession mySesion = request.getSession(true);
-                System.out.println("id: " + mySesion.getId());
-                System.out.println("fecha: " + mySesion.getCreationTime());
+            EmpleadoDAO dao=new EmpleadoDAO();
+            p=dao.validaSesion(p);
+            if(p!=null){
+               HttpSession mySesion=request.getSession(true);
+                System.out.println("id:"+mySesion.getId());
+                System.out.println("fecha:"+mySesion.getCreationTime());
                 mySesion.setAttribute("usuario", p);
                 request.getRequestDispatcher("principal.jsp").forward(request, response);
-
-            } else {
-                System.out.println("Usuario o pss invalido");
+                
+            }else{
+                System.out.println("el usurio o contraseña invalido");
                 request.getRequestDispatcher("error.html").forward(request, response);
             }
         }
