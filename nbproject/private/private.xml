@@ -3,8 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/Biblioteca_Parra/Biblioteca_Parra/src/java/modelo/dao/LibroDAO.java</file>
-            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/Biblioteca_Parra/Biblioteca_Parra/src/java/conexiones/MySQL_BD.java</file>
+            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/BIBLIOTECAAAAA/Biblioteca_Parra/src/java/control/ValidaCTO.java</file>
+            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/BIBLIOTECAAAAA/Biblioteca_Parra/web/index.jsp</file>
+            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/BIBLIOTECAAAAA/Biblioteca_Parra/src/java/modelo/dao/EmpleadoDAO.java</file>
+            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/BIBLIOTECAAAAA/Biblioteca_Parra/src/java/modelo/dao/LibroDAO.java</file>
+            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/BIBLIOTECAAAAA/Biblioteca_Parra/web/libro_vta.jsp</file>
+            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/BIBLIOTECAAAAA/Biblioteca_Parra/src/java/modelo/dto/EmpleadoDTO.java</file>
+            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/BIBLIOTECAAAAA/Biblioteca_Parra/src/java/modelo/dao/Contrato.java</file>
+            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/BIBLIOTECAAAAA/Biblioteca_Parra/web/principal.jsp</file>
+            <file>file:/C:/Users/pc/Downloads/Biblioteca_Parra/BIBLIOTECAAAAA/Biblioteca_Parra/src/java/modelo/dto/LibroDTO.java</file>
         </group>
     </open-files>
 </project-private>

@@ -20,7 +20,7 @@ if(obj !=null && obj.getAttribute("usuario")!=null){
     </head>
     <body>
 
-        <h1>Mi Biblioteca</h1>
+        <h1>Biblioteca</h1>
         <form action="ControlCTO" method="post">
             <input type="hidden" name="menu" value="Libros">
             <input type="submit" name="accion" value="Listar">
