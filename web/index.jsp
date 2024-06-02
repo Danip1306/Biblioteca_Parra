@@ -18,22 +18,22 @@
     </head>
     <body>        
         <div class="container-fluid" >
-            <h1>INGRESO</h1>
+            <h1><kbd>INGRESO</kbd></h1>
             <form action="ValidaCTO" method="post">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-                    <input type="email" name="email"  class="form-control text-bg-light border border-danger" id="exampleFormControlInput1" placeholder="nombre@example.com">
+                    <input type="email" name="email"  class="form-control text-bg-light border border-primary" id="exampleFormControlInput1" placeholder="nombre@example.com">
                 </div>
                 <div class="row g-3 align-items-center">
                     <div class="col-auto">
                         <label for="inputPassword6" class="col-form-label">Contraseña</label>
                     </div>
                     <div class="col-auto">
-                        <input type="password" name="clave" id="inputPassword6" class="form-control border border-danger" aria-describedby="passwordHelpInline">
+                        <input type="password" name="clave" id="inputPassword6" class="form-control border border-primary" aria-describedby="passwordHelpInline">
                     </div>
                 </div>
 
-                <button type="submit" name="accion" value="Ingresar" class="btn btn-outline-dark">Ingresar</button>
+                <button type="submit" name="accion" value="Ingresar" class="btn btn-outline-primary">Ingresar</button>
             </form>
         </div>
 

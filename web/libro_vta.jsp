@@ -40,8 +40,8 @@ if(obj !=null && obj.getAttribute("usuario")!=null){
                                 <td>${libro.getEditorial()}</td>
                                 <td>${libro.getAnio()}</td>
                                 <td>
-                                    <a class="btn btn-info" href="ControlCTO?menu=Editar&id=${libro.getIsbn()}">Editar</a>
-                                    <a class="btn btn-secondary" href="ControlCTO?menu=Eliminar&id=${libro.getIsbn()}">Delete</a>                                        
+                                    <a class="btn btn-outline-primary" href="ControlCTO?menu=Editar&id=${libro.getIsbn()}">Editar</a>
+                                    <a class="btn btn-outline-secondary" href="ControlCTO?menu=Eliminar&id=${libro.getIsbn()}">Delete</a>                                        
                                 </td>
                             </tr>
                         </c:forEach>
@@ -71,8 +71,8 @@ if(obj !=null && obj.getAttribute("usuario")!=null){
                             <label>Año</label>
                             <input type="text" value="${libro.getAnio()}" name="txtAnio" class="form-control">
                         </div>
-                        <input type="submit" name="menu" value="Agregar" class="btn btn-info">
-                        <input type="submit" name="menu" value="Actualizar" class="btn btn-secondary">
+                        <input type="submit" name="menu" value="Agregar" class="btn btn-outline-primary">
+                        <input type="submit" name="menu" value="Actualizar" class="btn btn-outline-secondary">
                     </form>
                 </div>
             </div>
